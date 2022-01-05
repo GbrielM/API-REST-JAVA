@@ -2,8 +2,7 @@
 
 Desafio Back end Brisalabs 💻
 O desafio consiste no desenvolvimento de uma API REST utilizando as tecnologias listadas abaixo.
-Caso não termine desenvolver todo o desafio, envia o que conseguir que nós avaliaremos com muito prazer.
-Crie um repositório público no GitHub e envie o link para o e-mail vanericadias@grupobrisanet.com.br com assunto Desafio Back end Brisalabs.
+
 Tecnologias 🚀
 NestJS ou Express
 Typescript
