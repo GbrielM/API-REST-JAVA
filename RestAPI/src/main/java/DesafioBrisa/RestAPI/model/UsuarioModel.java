@@ -14,7 +14,7 @@ public class UsuarioModel {
     public String nome;
 
     @Column(nullable = false, length = 10)
-    public String telefone;
+    public Integer telefone;
 
     public Integer getId() {
         return Id;
@@ -32,11 +32,11 @@ public class UsuarioModel {
         this.nome = nome;
     }
 
-    public String getTelefone() {
+    public Integer getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(String telefone) {
+    public void setTelefone(Integer telefone) {
         this.telefone = telefone;
     }
 }
