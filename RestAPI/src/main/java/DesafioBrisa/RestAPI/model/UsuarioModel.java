@@ -8,23 +8,20 @@ import javax.persistence.Id;
 public class UsuarioModel {
 
     @Id
-    public Integer codigo;
+    public Integer Id;
 
     @Column(nullable = false, length = 50)
     public String nome;
 
     @Column(nullable = false, length = 10)
-    public String login;
+    public String telefone;
 
-    @Column(nullable = false, length = 10)
-    public String senha;
-
-    public Integer getCodigo() {
-        return codigo;
+    public Integer getId() {
+        return Id;
     }
 
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
+    public void setId(Integer id) {
+        Id = id;
     }
 
     public String getNome() {
@@ -35,19 +32,11 @@ public class UsuarioModel {
         this.nome = nome;
     }
 
-    public String getLogin() {
-        return login;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 }

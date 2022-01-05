@@ -12,9 +12,9 @@ public class UsuarioController {
     @Autowired
     private UsuarioRepository repository;
 
-    @GetMapping(path = "/api/usuario/{codigo}")
-    public ResponseEntity consultar(@PathVariable("codigo") Integer codigo) {
-        return repository.findById(codigo)
+    @GetMapping(path = "/api/usuario/{id}")
+    public ResponseEntity consultar(@PathVariable("id") Integer id) {
+        return repository.findById(id)
                 .map(record -> ResponseEntity.ok().body(record))
                 .orElse(ResponseEntity.notFound().build());
     }
@@ -22,6 +22,11 @@ public class UsuarioController {
     @PostMapping(path = "/api/usuario/salvar")
     public UsuarioModel salvar(@RequestBody UsuarioModel usuario) {
         return repository.save(usuario);
+    }
+
+    @DeleteMapping(path = "/api/usuario/delete/{id}")
+    public void deleteUsuario(@PathVariable("id") Integer id) {
+        repository.deleteById(id);
     }
 
 }
