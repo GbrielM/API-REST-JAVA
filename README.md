@@ -56,3 +56,4 @@ Clean code
 Clareza
 Ausência de bugs
  
+ VIDEO DO ESTADO ATUAL DO PROJETO: https://www.youtube.com/watch?v=jwZkbRdjbxE
