@@ -1,6 +1,6 @@
-# DESAFIO-BRISA
+#API REST JAVA
 
-Desafio Back end Brisalabs 💻
+Desafio Back 💻
 O desafio consiste no desenvolvimento de uma API REST utilizando as tecnologias listadas abaixo.
 
 Tecnologias 🚀
